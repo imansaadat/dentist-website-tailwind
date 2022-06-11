@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>DentalCare</title>
+  </head>
+  <body class="font-Poppins">
+    <!-- Header -->
+    <header
+      id="header"
+      class="py-4 border-b-2 border-[#0000001a] fixed left-0 right-0 top-0 bg-white z-10"
+    >
+      <div class="max-w-[1200px] mx-auto px-4">
+        <nav class="flex justify-between items-center">
+          <a href="#" class="text-2xl lg:text-3xl text-black"
+            >Dental<span class="text-blue">Care.</span></a
+          >
+          <ul
+            id="navList"
+            class="left-[-100%] w-full md:w-auto md:flex text-center absolute md:static top-full duration-500 bg-light-bg md:bg-transparent"
+          >
+            <li class="p-4">
+              <a href="#" class="text-black hover:text-blue">Home</a>
+            </li>
+            <li class="p-4">
+              <a href="#" class="text-black hover:text-blue">About</a>
+            </li>
+            <li class="p-4">
+              <a href="#" class="text-black hover:text-blue">Services</a>
+            </li>
+            <li class="p-4">
+              <a href="#" class="text-black hover:text-blue">Reviews</a>
+            </li>
+            <li class="p-4">
+              <a href="#" class="text-black hover:text-blue">Contact</a>
+            </li>
+          </ul>
+
+          <a
+            href="#contact"
+            class="hidden lg:flex text-white bg-blue py-4 px-12 rounded hover:bg-black"
+            >make appointment</a
+          >
+
+          <div id="hamMenu" class="flex md:hidden text-3xl cursor-pointer">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Home section -->
+      <section
+        class="w-full bg-home bg-cover bg-left md:bg-center bg-no-repeat md:py-20"
+      >
+        <div class="max-w-[1200px] mx-auto px-4 flex items-center min-h-screen">
+          <div class="md:w-2/4 text-center md:text-left">
+            <h1
+              class="font-semibold text-3xl md:text-5xl leading-10 text-black uppercase"
+            >
+              let us brighten your smile
+            </h1>
+            <p class="py-5 leading-8 text-light-color">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laudantium itaque, quasi aliquam alias tempora voluptatibus.
+            </p>
+            <a
+              href="#contact"
+              class="text-white bg-blue py-4 px-12 rounded hover:bg-black inline-block"
+              >make appointment</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section class="py-20">
+        <div class="max-w-[1200px] mx-auto px-4">
+          <div class="grid md:grid-cols-2 gap-10">
+            <div>
+              <img
+                src="../assets/about-img.jpg"
+                class="w-full"
+                alt="about us"
+              />
+            </div>
+            <div class="text-center md:text-left">
+              <span class="text-blue text-lg"> About Us</span>
+              <h2 class="text-3xl md:text-4xl leading-10 text-black pt-2">
+                True Healthcare For Your Family
+              </h2>
+              <p class="py-5 leading-8 text-light-color">
+                Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Laboriosam Cupiditate Vero In Provident Ducimus. Totam Quas
+                Labore Mollitia Cum Nisi, Sint, Expedita Rem Error Ipsa,
+                Nesciunt Ab Provident. Aperiam, Officiis!
+              </p>
+              <a
+                href="#contact"
+                class="text-white bg-blue py-4 px-12 rounded hover:bg-black inline-block"
+                >make appointment</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Servives section -->
+      <section class="py-20 bg-light-bg">
+        <div class="max-w-[1200px] mx-auto px-4">
+          <h2
+            class="font-semibold text-2xl md:text-4xl text-black mb-10 text-center uppercase"
+          >
+            our services
+          </h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="text-center bg-white p-5 rounded">
+              <img
+                src="../assets/icon-1.svg"
+                class="mx-auto h-10"
+                alt="Alignment Specialist"
+              />
+              <h3 class="text-xl font-medium leading-10 text-black py-2">
+                Alignment Specialist
+              </h3>
+              <p class="leading-8 text-light-color">
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Fugiat,
+                Non?
+              </p>
+            </div>
+            <div class="text-center bg-white p-5 rounded">
+              <img
+                src="../assets/icon-2.svg"
+                class="mx-auto h-10"
+                alt="Cosmetic Dentistry"
+              />
+              <h3 class="text-xl font-medium leading-10 text-black py-2">
+                Cosmetic Dentistry
+              </h3>
+              <p class="leading-8 text-light-color">
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Fugiat,
+                Non?
+              </p>
+            </div>
+            <div class="text-center bg-white p-5 rounded">
+              <img
+                src="../assets/icon-3.svg"
+                class="mx-auto h-10"
+                alt="Oral Hygiene Experts"
+              />
+              <h3 class="text-xl font-medium leading-10 text-black py-2">
+                Oral Hygiene Experts
+              </h3>
+              <p class="leading-8 text-light-color">
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Fugiat,
+                Non?
+              </p>
+            </div>
+            <div class="text-center bg-white p-5 rounded">
+              <img
+                src="../assets/icon-4.svg"
+                class="mx-auto h-10"
+                alt="Root Canal Specialist"
+              />
+              <h3 class="text-xl font-medium leading-10 text-black py-2">
+                Root Canal Specialist
+              </h3>
+              <p class="leading-8 text-light-color">
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Fugiat,
+                Non?
+              </p>
+            </div>
+            <div class="text-center bg-white p-5 rounded">
+              <img
+                src="../assets/icon-5.svg"
+                class="mx-auto h-10"
+                alt="Live Dental Advisory"
+              />
+              <h3 class="text-xl font-medium leading-10 text-black py-2">
+                Live Dental Advisory
+              </h3>
+              <p class="leading-8 text-light-color">
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Fugiat,
+                Non?
+              </p>
+            </div>
+            <div class="text-center bg-white p-5 rounded">
+              <img
+                src="../assets/icon-6.svg"
+                class="mx-auto h-10"
+                alt="Cavity Inspection"
+              />
+              <h3 class="text-xl font-medium leading-10 text-black py-2">
+                Cavity Inspection
+              </h3>
+              <p class="leading-8 text-light-color">
+                Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Fugiat,
+                Non?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Work Process -->
+      <section class="py-20">
+        <div class="max-w-[1200px] mx-auto px-4">
+          <h2
+            class="font-semibold text-2xl md:text-4xl text-black mb-10 text-center uppercase"
+          >
+            work process
+          </h2>
+          <div class="grid  md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="bg-blue py-5 px-2 rounded text-center shadow-lg">
+              <img
+                src="../assets/process-1.png"
+                class="max-h-[250px] max-w-[250px] mb-3 mx-auto"
+                alt="Cosmetic Dentistry"
+              />
+              <h3 class="text-xl font-medium leading-10 text-white py-2">
+                Cosmetic Dentistry
+              </h3>
+              <p class="leading-8 text-white">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Maxime, Excepturi?
+              </p>
+            </div>
+            <div class="bg-blue py-5 px-2 rounded text-center shadow-lg">
+              <img
+                src="../assets/process-2.png"
+                class="max-h-[250px] max-w-[250px] mb-3 mx-auto"
+                alt="Pediatric Dentistry"
+              />
+              <h3 class="text-xl font-medium leading-10 text-white py-2">
+                Pediatric Dentistry
+              </h3>
+              <p class="leading-8 text-white">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Maxime, Excepturi?
+              </p>
+            </div>
+            <div class="bg-blue py-5 px-2 rounded text-center shadow-lg">
+              <img
+                src="../assets/process-3.png"
+                class="max-h-[250px] max-w-[250px] mb-3 mx-auto"
+                alt="Dental Implants"
+              />
+              <h3 class="text-xl font-medium leading-10 text-white py-2">
+                Dental Implants
+              </h3>
+              <p class="leading-8 text-white">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit.
+                Maxime, Excepturi?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Clients sections  -->
+      <section class="py-20 bg-light-bg">
+        <div class="max-w-[1200px] mx-auto px-4">
+          <h2
+            class="font-semibold text-2xl md:text-4xl text-black mb-10 text-center uppercase"
+          >
+            satisfied clients
+          </h2>
+          <div class="swiper clients">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide bg-white rounded p-4 text-center shadow-lg"
+              >
+                <img
+                  src="../assets/pic-1.png"
+                  class="rounded-full h-24 w-24 mx-auto"
+                  alt=""
+                />
+                <p class="leading-8 text-light-color py-5">
+                  Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eos,
+                  Iure? Nemo Est Aspernatur Voluptatum Id, Laboriosam Asperiores
+                  Iure Omnis Alias?
+                </p>
+                <div class="bg-light-bg inline-block px-4 py-1 rounded mb-4">
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star-half-stroke text-blue"></i>
+                </div>
+                <h3 class="capitalize text-black font-medium md:text-xl mb-1">
+                  William
+                </h3>
+                <span class="capitalize text-light-color"
+                  >satisfied client</span
+                >
+              </div>
+              <div
+                class="swiper-slide bg-white rounded p-4 text-center shadow-lg"
+              >
+                <img
+                  src="../assets/pic-2.png"
+                  class="rounded-full h-24 w-24 mx-auto"
+                  alt=""
+                />
+                <p class="leading-8 text-light-color py-5">
+                  Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eos,
+                  Iure? Nemo Est Aspernatur Voluptatum Id, Laboriosam Asperiores
+                  Iure Omnis Alias?
+                </p>
+                <div class="bg-light-bg inline-block px-4 py-1 rounded mb-4">
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star-half-stroke text-blue"></i>
+                </div>
+                <h3 class="capitalize text-black font-medium md:text-xl mb-1">
+                  Jennifer
+                </h3>
+                <span class="capitalize text-light-color"
+                  >satisfied client</span
+                >
+              </div>
+              <div
+                class="swiper-slide bg-white rounded p-4 text-center shadow-lg"
+              >
+                <img
+                  src="../assets/pic-3.png"
+                  class="rounded-full h-24 w-24 mx-auto"
+                  alt=""
+                />
+                <p class="leading-8 text-light-color py-5">
+                  Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eos,
+                  Iure? Nemo Est Aspernatur Voluptatum Id, Laboriosam Asperiores
+                  Iure Omnis Alias?
+                </p>
+                <div class="bg-light-bg inline-block px-4 py-1 rounded mb-4">
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star text-blue"></i>
+                  <i class="fa-solid fa-star-half-stroke text-blue"></i>
+                </div>
+                <h3 class="capitalize text-black font-medium md:text-xl mb-1">
+                  john deo
+                </h3>
+                <span class="capitalize text-light-color"
+                  >satisfied client</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Make Appointment section -->
+      <section class="py-20">
+        <div class="max-w-[1200px] mx-auto px-4">
+          <h2
+            class="font-semibold text-2xl md:text-4xl text-black mb-10 text-center uppercase"
+          >
+            make appointment
+          </h2>
+          <div class="bg-light-bg p-6 max-w-[30rem] mx-auto rounded">
+            <form action="#">
+              <div class="flex flex-col mb-4">
+                <label class="capitalize text-black mb-1">your name :</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="enter your name"
+                  class="w-full p-3 outline-none"
+                  required
+                />
+              </div>
+              <div class="flex flex-col mb-4">
+                <label class="capitalize text-black mb-1">your email :</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="enter your email"
+                  class="w-full p-3 outline-none"
+                  required
+                />
+              </div>
+              <div class="flex flex-col mb-4">
+                <label class="capitalize text-black mb-1">your number :</label>
+                <input
+                  type="number"
+                  name="number"
+                  placeholder="enter your number"
+                  class="w-full p-3 outline-none"
+                  required
+                />
+              </div>
+              <div class="flex flex-col mb-6">
+                <label class="capitalize text-black mb-1"
+                  >appointment date :</label
+                >
+                <input
+                  type="datetime-local"
+                  name="date"
+                  placeholder="enter your name"
+                  class="w-full p-3 outline-none"
+                  required
+                />
+              </div>
+              <input type"submit" value="make appointment" name="submit"
+              class="hidden lg:flex text-white bg-blue py-4 px-12 rounded
+              hover:bg-black">
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="pt-20 bg-light-bg">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="text-center">
+            <i class="fas fa-phone w-12 h-12 bg-blue text-white rounded-full text-xl leading-[48px]"></i>
+            <h3 class="text-black capitalize font-medium mt-3">phone number</h3>
+            <p class="text-light-color py-2">+123-456-7890</p>
+            <p class="text-light-color">+111-222-3333</p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-map-marker-alt w-12 h-12 bg-blue text-white rounded-full text-xl leading-[48px]"></i>
+            <h3 class="text-black capitalize font-medium mt-3">our address</h3>
+            <p class="text-light-color py-2">mumbai, india - 400104</p>
+          </div>
+
+          <div class="text-center">
+            <i class="fas fa-clock w-12 h-12 bg-blue text-white rounded-full text-xl leading-[48px]"></i>
+            <h3 class="text-black capitalize font-medium mt-3">opening hours</h3>
+            <p class="text-light-color py-2">00:07am to 10:00pm</p>
+          </div>
+
+          <div class="text-center">
+            <i class="fas fa-envelope w-12 h-12 bg-blue text-white rounded-full text-xl leading-[48px]"></i>
+            <h3 class="text-black capitalize font-medium mt-3">email address</h3>
+            <p class="text-light-color py-2">shaikhanas@gmail.com</p>
+            <p class="text-light-color">anasbhai@gmail.com</p>
+          </div>
+        </div>
+        <div class='text-center py-5 border-t border-[#0000001a] mt-6'>
+          <p>Developed by <span class='text-blue'>Eslam Saadat (Iman)</span></p>
+       </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="./script.js"></script>
+  </body>
+</html>
