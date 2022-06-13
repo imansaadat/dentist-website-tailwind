@@ -568,6 +568,10 @@ video {
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
 .left-0{
   left: 0px;
 }
@@ -586,6 +590,18 @@ video {
 
 .top-full{
   top: 100%;
+}
+
+.left-\[\]{
+  left: ;
+}
+
+.left-\[-100\]{
+  left: -100;
+}
+
+.left-\[-\]{
+  left: -;
 }
 
 .z-10{
@@ -713,6 +729,24 @@ video {
   gap: 1.5rem;
 }
 
+.space-x-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -820,6 +854,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -917,6 +956,13 @@ video {
 
 .duration-500{
   transition-duration: 500ms;
+}
+
+@layer {
+  html{
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+  }
 }
 
 .hover\:bg-black:hover{
